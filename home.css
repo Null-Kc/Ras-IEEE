@@ -1,0 +1,144 @@
+.inicio{
+  width: 100%;
+  background-color: #EEEEEE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap;
+  background-color: #EEEEEE;
+  
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.box_slide {
+  flex-direction: row;
+  display: flex;
+  width: 90vw;
+  background-color: #EEEEEE;
+}
+
+.imagem_slide {
+  width: 75%;
+}
+
+.box_imagem_slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+}
+
+.box_texto_slide {
+  width: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.title_slide {
+  color: #97002B;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text_slide {
+  color: #681371;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation {
+  position: absolute;
+  top: auto;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.navigation label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #EEEEEE;
+  border: 2px solid #681371;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.navigation label:hover {
+  background: #681371;
+  border: 2px solid #681371;
+}
+
+.navigation label.checked {
+  background: #681371;
+  border-color: #681371;
+}
+
+.slides-0 {
+  transform: translateX(0);
+}
+
+.slides-1 {
+  transform: translateX(-90vw);
+}
+
+.slides-2 {
+  transform: translateX(-180vw);
+}
+
+.slides-3 {
+  transform: translateX(-270vw);
+}
+
+@media (max-width: 900px){
+  .box_slide {
+      width: 100vw;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+    }
+
+    .carousel{
+      margin-bottom: 50px;
+    }
+    
+    .box_texto_slide{
+      bottom: 50px;
+      width: 90%;
+    }
+
+    .slides-0 {
+    transform: translateX(0);
+  }
+
+  .slides-1 {
+    transform: translateX(-100vw);
+  }
+
+  .slides-2 {
+    transform: translateX(-200vw);
+  }
+
+  .slides-3 {
+    transform: translateX(-300vw);
+  }
+  }

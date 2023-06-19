@@ -1,0 +1,64 @@
+.Rodape {
+  width: 100%;
+  
+  background-color: #EEEEEE;
+  left: 0;
+  bottom: 0;
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_rodape{
+  width: 90%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Redes-sociais{
+  justify-content: right;
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+  flex-direction: row;
+}
+
+.Redes-sociais-logo {
+  width: 50px;
+  height: 50px; 
+  margin-right: 20px;
+}
+
+.Redes-sociais-logo-last {
+  width: 50px;
+  height: 50px; 
+}
+
+.Rodape-texto {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #681371;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 900px){
+  .box_rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+
+  }
+  .Rodape-texto{
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}

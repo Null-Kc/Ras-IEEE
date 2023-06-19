@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ras</title>
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./sobre.css">
+    <link rel="stylesheet" href="./projetos.css">
+    <link rel="stylesheet" href="./equipe.css">
+    
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('7N1Ssz7fskGdjIECF');
+        })();
+    </script>
+    <script type="text/javascript">
+
+        window.onload = function() {
+            const Apagar = document.getElementById("reset");
+
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_bbdlxbl', 'template_vw5w8or', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                        Apagar.click();
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+  
+  </head>
+  <body>
+    <header class="Cabecalho">
+      <div class="box_cabecalho">
+        <img class="Logo" src="./Public/logo.png" alt="Ras">
+        <nav class="Menu">
+
+          <a class="menu_title_inicio" href="#">Inicio</a>
+          
+          <a class="menu_title_sobre"  href="#">Sobre</a>
+          
+          <a class="menu_title_projetos" href="#">Projetos</a>
+          
+          <a class="menu_title_equipe"  href="#">Equipe</a>
+          
+          <a class="menu_title_contato" href="#">Contato</a>
+        </nav>
+
+        <nav class="menu_hamburguer" role="navigation">
+          <div class="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="menu">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Projetos</a></li>
+              <li><a href="#">Equipe</a></li>
+              <li><a href="#">Contato</a></li>
+              <li>
+                <div class="box_redes_sociais_menu">
+                  <p class="texto_redes_sociais_menu">
+                    Copyright RAS UFPB
+                  </p>
+                  <nav class="redes_sociais_menu">
+                    <a href="https://github.com/RAS-UFPB" target="_blank" style="text-decoration: none;">
+                      <img class="redes_sociais_menu_logo" src="./Public/Redes_sociais/github.png" alt="github">
+                    </a>
+            
+                    <a href="https://www.instagram.com/rasufpb/" target="_blank" style="text-decoration: none;">
+                      <img class="redes_sociais_menu_logo" src="./Public/Redes_sociais/instagram.png" alt="instagram">
+                    </a>
+            
+                    <a href="https://www.twitch.tv/rasufpb" target="_blank" style="text-decoration: none;">
+                      <img class="redes_sociais_menu_logo" src="./Public/Redes_sociais/twitch.png" alt="twitch">
+                    </a>
+                    
+                    <a href="https://www.youtube.com/channel/UC7ivKC1W7ScdBqfKEkJO68g" target="_blank" style="text-decoration: none;">
+                      <img class="redes_sociais_menu_logo_last" src="./Public/Redes_sociais/youtube.png" alt="youtube">
+                    </a>
+                  </nav>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+      <div class="inicio">
+        <div class="carousel">
+          <div class="slides slides-0">
+            <input style="display: none;" type="radio" name="slide" id="slide1" checked>
+            <input style="display: none;" type="radio" name="slide" id="slide2">
+            <input style="display: none;" type="radio" name="slide" id="slide3">
+            <input style="display: none;" type="radio" name="slide" id="slide4">
+      
+            <div class="slide">
+              <div class="box_slide">
+                <div class="box_imagem_slide">
+                  <img class="imagem_slide" src="./Public/RASS.png" alt="">
+                </div>
+      
+                <div class="box_texto_slide">
+                  <h2 class="title_slide">
+                    Lorem Ipsum
+                  </h2>
+                  <p class="text_slide">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorem laboriosam ducimus non ipsam fugiat quo eos, ipsa assumenda, repellendus est! Odit, accusamus blanditiis temporibus facilis eaque harum vitae. Rem.
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="slide">
+              <div class="box_slide">
+                <div class="box_imagem_slide">
+                  <img class="imagem_slide" src="./Public/GDA.png" alt="">
+                </div>
+                <div class="box_texto_slide">
+                  <h2 class="title_slide">
+                    Lorem Ipsum
+                  </h2>
+                  <p class="text_slide">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorem laboriosam ducimus non ipsam fugiat quo eos, ipsa assumenda, repellendus est! Odit, accusamus blanditiis temporibus facilis eaque harum vitae. Rem.
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="slide">
+              <div class="box_slide">
+                <div class="box_imagem_slide">
+                  <img class="imagem_slide" src="./Public/GDR.png" alt="">
+                </div>
+                <div class="box_texto_slide">
+                  <h2 class="title_slide">
+                    Lorem Ipsum
+                  </h2>
+                  <p class="text_slide">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorem laboriosam ducimus non ipsam fugiat quo eos, ipsa assumenda, repellendus est! Odit, accusamus blanditiis temporibus facilis eaque harum vitae. Rem.
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="slide">
+              <div class="box_slide">
+                <div class="box_imagem_slide">
+                  <img class="imagem_slide" src="./Public/GDA.png" alt="">
+                </div>
+                <div class="box_texto_slide">
+                  <h2 class="title_slide">
+                    Lorem Ipsum
+                  </h2>
+                  <p class="text_slide">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorem laboriosam ducimus non ipsam fugiat quo eos, ipsa assumenda, repellendus est! Odit, accusamus blanditiis temporibus facilis eaque harum vitae. Rem.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="navigation">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+          <label for="slide4"></label>
+        </div>
+      </div>
+
+      <div class="sobre">
+        <div class="carousel_sobre">
+          <div class="slides_sobre">
+            <input style="display: none;" type="radio" name="slide" id="slide0_sobre" checked>
+            <input style="display: none;" type="radio" name="slide" id="slide1_sobre">
+            <input style="display: none;" type="radio" name="slide" id="slide2_sobre">
+            <input style="display: none;" type="radio" name="slide" id="slide3_sobre">
+            
+            <div class="slide_sobre">
+              <div class="box_slide_sobre">
+                <div class="box_imagem_slide_sobre">
+                  <img class="imagem_slide_sobre" src="./Public/sobre.png" alt="">
+                </div>
+      
+                <div class="box_texto_slide_sobre">
+                  <h2 class="title_slide_sobre">
+                    Lorem Ipsum
+                  </h2>
+                  <p class="text_slide_sobre">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorem laboriosam ducimus non ipsam fugiat quo eos, ipsa assumenda, repellendus est! Odit, accusamus blanditiis temporibus facilis eaque harum vitae. Rem.
+                  </p>
+                </div>
+
+                <div class="box_botao_proximo_sobre">
+                  <button onclick="nextSlideSobre()" class="arrow"></button>
+                </div>
+              </div>
+            </div>
+      
+            <div class="slide_sobre">
+              <div class="box_slide_sobre">
+                <div class="box_imagem_slide_sobre">
+                  <img class="imagem_slide_sobre" src="./Public/sobre.png" alt="">
+                </div>
+      
+                <div class="box_texto_slide_sobre">
+                  <h2 class="title_slide_sobre">
+                    Lorem Ipsum
+                  </h2>
+                  <p class="text_slide_sobre">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorem laboriosam ducimus non ipsam fugiat quo eos, ipsa assumenda, repellendus est! Odit, accusamus blanditiis temporibus facilis eaque harum vitae. Rem.
+                  </p>
+                </div>
+
+                <div class="box_botao_proximo_sobre">
+                  <button onclick="nextSlideSobre()" class="arrow"></button>
+                </div>
+              </div>
+            </div>
+      
+            <div class="slide_sobre">
+              <div class="box_slide_sobre">
+                <div class="box_imagem_slide_sobre">
+                  <img class="imagem_slide_sobre" src="./Public/sobre.png" alt="">
+                </div>
+      
+                <div class="box_texto_slide_sobre">
+                  <h2 class="title_slide_sobre">
+                    Lorem Ipsum
+                  </h2>
+                  <p class="text_slide_sobre">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorem laboriosam ducimus non ipsam fugiat quo eos, ipsa assumenda, repellendus est! Odit, accusamus blanditiis temporibus facilis eaque harum vitae. Rem.
+                  </p>
+                </div>
+
+                <div class="box_botao_proximo_sobre">
+                  <button onclick="nextSlideSobre()" class="arrow"></button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="slide_sobre">
+              <div class="box_slide_sobre">
+                <div class="box_imagem_slide_sobre">
+                  <img class="imagem_slide_sobre" src="./Public/sobre.png" alt="">
+                </div>
+      
+                <div class="box_texto_slide_sobre">
+                  <h2 class="title_slide_sobre">
+                    Lorem Ipsum
+                  </h2>
+                  <p class="text_slide_sobre">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorem laboriosam ducimus non ipsam fugiat quo eos, ipsa assumenda, repellendus est! Odit, accusamus blanditiis temporibus facilis eaque harum vitae. Rem.
+                  </p>
+                </div>
+
+                <div class="box_botao_proximo_sobre">
+                  <button onclick="nextSlideSobre()" class="arrow"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+      
+      <div class="projetos">
+        <div class="carousel_projetos">
+          <div class="slides_projetos">
+            <input style="display: none;" type="radio" name="slide" id="slide1_projetos" checked>
+            <input style="display: none;" type="radio" name="slide" id="slide2_projetos">
+            <input style="display: none;" type="radio" name="slide" id="slide3_projetos">
+    
+            
+            <div class="previousSlideProjetos">
+              <button class="arrow_left" onclick="previousSlideProjetos()"></button>
+            </div>
+    
+            <div class="slide_projetos">
+              <img class="img_slide_projetos" width="120" src="./Public/projetos.png" alt="">
+    
+              <h2 class="title_slide_projetos">
+                Projeto 1
+              </h2>
+              <p class="text_slide_projetos">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+            
+    
+            <div class="slide_projetos">
+              <img class="img_slide_projetos" src="./Public/projetos.png" alt="">
+    
+              <h2 class="title_slide_projetos">
+                Projeto 2
+              </h2>
+              <p class="text_slide_projetos">
+                Nullam at congue dui. Quisque ut dapibus magna.
+              </p>
+            </div>
+    
+            <div class="slide_projetos">
+              <img class="img_slide_projetos" src="./Public/projetos.png" alt="">
+              <h2 class="title_slide_projetos">
+                Projeto 3
+              </h2>
+              <p class="text_slide_projetos">
+                Donec lacinia dignissim tortor vitae fermentum.
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="navigation_projetos">
+          <label style="display: none;" for="slide1_projetos"></label>
+          <label style="display: none;" for="slide2_projetos"></label>
+          <label style="display: none;" for="slide3_projetos"></label>
+        </div>
+    
+        <div class="nextSlideProjetos">
+          <button class="arrow" onclick="nextSlideProjetos()"></button>
+        </div>
+      </div>
+
+      <div class="equipe">
+        <div class="membros">
+          <img src="./Public/alan.png" alt="Imagem 1">
+          <h2 class="nome_equipe">Lorem Ipsum</h2>
+          <p class="funcao_equipe">Lorem Ipsum is simply </p>
+        </div>
+        <div class="membros">
+          <img class="membro_imagem" src="./Public/lan.png" alt="Imagem 2">
+          <h2 class="nome_equipe">Lorem Ipsum</h2>
+          <p class="funcao_equipe">Lorem Ipsum is simply </p>
+        </div>
+        <div class="membros">
+          <img class="membro_imagem" src="./Public/lucas.png" alt="Imagem 3">
+          <h2 class="nome_equipe">Lorem Ipsum</h2>
+          <p class="funcao_equipe">Lorem Ipsum is simply </p>
+        </div>
+        <div class="membros">
+          <img class="membro_imagem" src="./Public/lelo.png" alt="Imagem 4">
+          <h2 class="nome_equipe">Lorem Ipsum</h2>
+          <p class="funcao_equipe">Lorem Ipsum is simply </p>
+        </div>
+        <div class="membros">
+          <img class="membro_imagem" src="./Public/alan.png" alt="Imagem 1">
+          <h2 class="nome_equipe">Lorem Ipsum</h2>
+          <p class="funcao_equipe">Lorem Ipsum is simply </p>
+        </div>
+        <div class="membros">
+          <img class="membro_imagem" src="./Public/lan.png" alt="Imagem 2">
+          <h2 class="nome_equipe">Lorem Ipsum</h2>
+          <p class="funcao_equipe">Lorem Ipsum is simply </p>
+        </div>
+        <div class="membros">
+          <img class="membro_imagem" src="./Public/lucas.png" alt="Imagem 3">
+          <h2 class="nome_equipe">Lorem Ipsum</h2>
+          <p class="funcao_equipe">Lorem Ipsum is simply </p>
+        </div>
+        <div class="membros">
+          <img class="membro_imagem" src="./Public/lelo.png" alt="Imagem 4">
+          <h2 class="nome_equipe">Lorem Ipsum</h2>
+          <p class="funcao_equipe">Lorem Ipsum is simply </p>
+        </div>
+      </div>
+
+      <div class="contato">
+    
+        <div class="box_contato">
+          <h2 class="texto_contato">
+            Contato:
+          </h2>
+          
+          <form class="formulario_de_contato" id="contact-form" type="submit">
+            <input type="hidden" name="contact_number">
+            <label class="texto_label">Name:</label>
+            <input class="enviar_formulario" type="text" name="user_name">
+            <label class="texto_label">Email:</label>
+            <input class="enviar_formulario" type="email" name="user_email">
+            <label class="texto_label">Message:</label>
+            <textarea class="mensagem_formulario" name="message" rows="4"></textarea>
+    
+            <button type="submit" class="botao_enviar_form">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Enviar
+            </button>
+            <button id="reset" type="reset" style="display: none;">teste</button>
+          </form>
+        </div>
+       
+      </div>
+      
+    </main>
+    
+    <footer class="Rodape">
+      <div class="box_rodape">
+        <p class="Rodape-texto">
+          Copyright RAS UFPB
+        </p>
+        <nav class="Redes-sociais">
+          <a href="https://github.com/RAS-UFPB" target="_blank" style="text-decoration: none;">
+            <img class="Redes-sociais-logo" src="./Public/Redes_sociais/github.png" alt="github">
+          </a>
+    
+          <a href="https://www.instagram.com/rasufpb/" target="_blank" style="text-decoration: none;">
+            <img class="Redes-sociais-logo" src="./Public/Redes_sociais/instagram.png" alt="instagram">
+          </a>
+    
+          <a href="https://www.twitch.tv/rasufpb" target="_blank" style="text-decoration: none;">
+            <img class="Redes-sociais-logo" src="./Public/Redes_sociais/twitch.png" alt="twitch">
+          </a>
+          
+          <a href="https://www.youtube.com/channel/UC7ivKC1W7ScdBqfKEkJO68g" target="_blank" style="text-decoration: none;">
+            <img class="Redes-sociais-logo-last" src="./Public/Redes_sociais/youtube.png" alt="youtube">
+          </a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="./inicio_slide.js"></script>
+    <script src="./sobre_slide.js"></script>
+    <script src="projetos_slide.js"></script>
+  </body>
+</html>
