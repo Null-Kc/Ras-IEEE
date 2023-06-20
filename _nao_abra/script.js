@@ -1,3 +1,29 @@
+// Start Cabecalho 
+function desabilitarScroll() {
+  document.body.style.overflow = 'hidden';
+}
+
+function habilitarScroll() {
+  document.body.style.overflow = '';
+}
+
+
+var li = document.getElementById("menu_hamburguer");
+var menu = false;
+
+li.addEventListener("click", function(event) {
+  if(menu == false){
+    menu = true;
+    desabilitarScroll();
+  }
+  else{
+    menu = false;
+    habilitarScroll();
+  }
+})
+
+// Fim Cabecalho
+ 
 // Start Inicio
 
 const carousel = document.querySelector('.carousel');
@@ -103,7 +129,6 @@ function nextSlideProjetos() {
   slides[nextSlideIndex].classList.add('active_slide');
   navigationLabels[nextSlideIndex].classList.add('active_slide');
 }
-
 
 const firstSlide = document.querySelector('.slides_projetos .slide_projetos');
 const firstNavigationLabel = document.querySelector('.navigation_projetos label');
