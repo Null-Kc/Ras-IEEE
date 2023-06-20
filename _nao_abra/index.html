@@ -2,48 +2,14 @@
 <html>
   <head>
     <title>Ras</title>
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/contact.css">
-    <link rel="stylesheet" href="./styles/home.css">
-    <link rel="stylesheet" href="./styles/sobre.css">
-    <link rel="stylesheet" href="./styles/projetos.css">
-    <link rel="stylesheet" href="./styles/equipe.css">
-    
+    <link rel="stylesheet" href="./tudo.css">
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init('7N1Ssz7fskGdjIECF');
-        })();
-    </script>
-    <script type="text/javascript">
-
-        window.onload = function() {
-            const Apagar = document.getElementById("reset");
-
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('service_bbdlxbl', 'template_vw5w8or', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                        Apagar.click();
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
-  
   </head>
   <body>
     <header class="Cabecalho">
+
       <div class="box_cabecalho">
-        <img class="Logo" src="../Public/logo.png" alt="Ras">
+        <img class="Logo" src="./assets/logo.png" alt="Ras">
         <nav class="Menu">
 
           <a class="menu_title_inicio" href="#">Inicio</a>
@@ -76,19 +42,19 @@
                   </p>
                   <nav class="redes_sociais_menu">
                     <a href="https://github.com/RAS-UFPB" target="_blank" style="text-decoration: none;">
-                      <img class="redes_sociais_menu_logo" src="../Public/Redes_sociais/github.png" alt="github">
+                      <img class="redes_sociais_menu_logo" src="./assets/Redes_sociais/github.png" alt="github">
                     </a>
             
                     <a href="https://www.instagram.com/rasufpb/" target="_blank" style="text-decoration: none;">
-                      <img class="redes_sociais_menu_logo" src="../Public/Redes_sociais/instagram.png" alt="instagram">
+                      <img class="redes_sociais_menu_logo" src="./assets/Redes_sociais/instagram.png" alt="instagram">
                     </a>
             
                     <a href="https://www.twitch.tv/rasufpb" target="_blank" style="text-decoration: none;">
-                      <img class="redes_sociais_menu_logo" src="../Public/Redes_sociais/twitch.png" alt="twitch">
+                      <img class="redes_sociais_menu_logo" src="./assets/Redes_sociais/twitch.png" alt="twitch">
                     </a>
                     
                     <a href="https://www.youtube.com/channel/UC7ivKC1W7ScdBqfKEkJO68g" target="_blank" style="text-decoration: none;">
-                      <img class="redes_sociais_menu_logo_last" src="../Public/Redes_sociais/youtube.png" alt="youtube">
+                      <img class="redes_sociais_menu_logo_last" src="./assets/Redes_sociais/youtube.png" alt="youtube">
                     </a>
                   </nav>
                 </div>
@@ -98,6 +64,7 @@
           
         </nav>
       </div>
+    
     </header>
 
     <main>
@@ -113,7 +80,7 @@
             <div class="slide">
               <div class="box_slide">
                 <div class="box_imagem_slide">
-                  <img class="imagem_slide" src="../Public/RASS.png" alt="Ras">
+                  <img class="imagem_slide" src="./assets/RASS.png" alt="Ras">
                 </div>
       
                 <div class="box_texto_slide">
@@ -130,7 +97,7 @@
             <div class="slide">
               <div class="box_slide">
                 <div class="box_imagem_slide">
-                  <img class="imagem_slide" src="../Public/GDA.png" alt="Ras">
+                  <img class="imagem_slide" src="./assets/GDA.png" alt="Ras">
                 </div>
                 <div class="box_texto_slide">
                   <h2 class="title_slide">
@@ -146,7 +113,7 @@
             <div class="slide">
               <div class="box_slide">
                 <div class="box_imagem_slide">
-                  <img class="imagem_slide" src="../Public/GDR.png" alt="Ras">
+                  <img class="imagem_slide" src="./assets/GDR.png" alt="Ras">
                 </div>
                 <div class="box_texto_slide">
                   <h2 class="title_slide">
@@ -162,7 +129,7 @@
             <div class="slide">
               <div class="box_slide">
                 <div class="box_imagem_slide">
-                  <img class="imagem_slide" src="../Public/GDA.png" alt="Ras">
+                  <img class="imagem_slide" src="./assets/GDA.png" alt="Ras">
                 </div>
                 <div class="box_texto_slide">
                   <h2 class="title_slide">
@@ -196,7 +163,7 @@
             <div class="slide_sobre">
               <div class="box_slide_sobre">
                 <div class="box_imagem_slide_sobre">
-                  <img class="imagem_slide_sobre" src="../Public/sobre.png" alt="Ras">
+                  <img class="imagem_slide_sobre" src="./assets/sobre.png" alt="Ras">
                 </div>
       
                 <div class="box_texto_slide_sobre">
@@ -217,7 +184,7 @@
             <div class="slide_sobre">
               <div class="box_slide_sobre">
                 <div class="box_imagem_slide_sobre">
-                  <img class="imagem_slide_sobre" src="../Public/sobre.png" alt="Ras">
+                  <img class="imagem_slide_sobre" src="./assets/sobre.png" alt="Ras">
                 </div>
       
                 <div class="box_texto_slide_sobre">
@@ -238,7 +205,7 @@
             <div class="slide_sobre">
               <div class="box_slide_sobre">
                 <div class="box_imagem_slide_sobre">
-                  <img class="imagem_slide_sobre" src="../Public/sobre.png" alt="Ras">
+                  <img class="imagem_slide_sobre" src="./assets/sobre.png" alt="Ras">
                 </div>
       
                 <div class="box_texto_slide_sobre">
@@ -259,7 +226,7 @@
             <div class="slide_sobre">
               <div class="box_slide_sobre">
                 <div class="box_imagem_slide_sobre">
-                  <img class="imagem_slide_sobre" src="../Public/sobre.png" alt="Ras">
+                  <img class="imagem_slide_sobre" src="./assets/sobre.png" alt="Ras">
                 </div>
       
                 <div class="box_texto_slide_sobre">
@@ -294,7 +261,7 @@
             </div>
     
             <div class="slide_projetos">
-              <img class="img_slide_projetos" width="120" src="../Public/projetos.png" alt="Ras">
+              <img class="img_slide_projetos" width="120" src="./assets/projetos.png" alt="Ras">
     
               <h2 class="title_slide_projetos">
                 Projeto 1
@@ -306,7 +273,7 @@
             
     
             <div class="slide_projetos">
-              <img class="img_slide_projetos" src="../Public/projetos.png" alt="Ras">
+              <img class="img_slide_projetos" src="./assets/projetos.png" alt="Ras">
     
               <h2 class="title_slide_projetos">
                 Projeto 2
@@ -317,7 +284,7 @@
             </div>
     
             <div class="slide_projetos">
-              <img class="img_slide_projetos" src="../Public/projetos.png" alt="Ras">
+              <img class="img_slide_projetos" src="./assets/projetos.png" alt="Ras">
               <h2 class="title_slide_projetos">
                 Projeto 3
               </h2>
@@ -341,42 +308,42 @@
 
       <div class="equipe">
         <div class="membros">
-          <img src="../Public/alan.png" alt="Imagem 1">
+          <img src="./assets/alan.png" alt="Imagem 1">
           <h2 class="nome_equipe">Lorem Ipsum</h2>
           <p class="funcao_equipe">Lorem Ipsum is simply </p>
         </div>
         <div class="membros">
-          <img class="membro_imagem" src="../Public/lan.png" alt="Imagem 2">
+          <img class="membro_imagem" src="./assets/lan.png" alt="Imagem 2">
           <h2 class="nome_equipe">Lorem Ipsum</h2>
           <p class="funcao_equipe">Lorem Ipsum is simply </p>
         </div>
         <div class="membros">
-          <img class="membro_imagem" src="../Public/lucas.png" alt="Imagem 3">
+          <img class="membro_imagem" src="./assets/lucas.png" alt="Imagem 3">
           <h2 class="nome_equipe">Lorem Ipsum</h2>
           <p class="funcao_equipe">Lorem Ipsum is simply </p>
         </div>
         <div class="membros">
-          <img class="membro_imagem" src="../Public/lelo.png" alt="Imagem 4">
+          <img class="membro_imagem" src="./assets/lelo.png" alt="Imagem 4">
           <h2 class="nome_equipe">Lorem Ipsum</h2>
           <p class="funcao_equipe">Lorem Ipsum is simply </p>
         </div>
         <div class="membros">
-          <img class="membro_imagem" src="../Public/alan.png" alt="Imagem 1">
+          <img class="membro_imagem" src="./assets/alan.png" alt="Imagem 1">
           <h2 class="nome_equipe">Lorem Ipsum</h2>
           <p class="funcao_equipe">Lorem Ipsum is simply </p>
         </div>
         <div class="membros">
-          <img class="membro_imagem" src="../Public/lan.png" alt="Imagem 2">
+          <img class="membro_imagem" src="./assets/lan.png" alt="Imagem 2">
           <h2 class="nome_equipe">Lorem Ipsum</h2>
           <p class="funcao_equipe">Lorem Ipsum is simply </p>
         </div>
         <div class="membros">
-          <img class="membro_imagem" src="../Public/lucas.png" alt="Imagem 3">
+          <img class="membro_imagem" src="./assets/lucas.png" alt="Imagem 3">
           <h2 class="nome_equipe">Lorem Ipsum</h2>
           <p class="funcao_equipe">Lorem Ipsum is simply </p>
         </div>
         <div class="membros">
-          <img class="membro_imagem" src="../Public/lelo.png" alt="Imagem 4">
+          <img class="membro_imagem" src="./assets/lelo.png" alt="Imagem 4">
           <h2 class="nome_equipe">Lorem Ipsum</h2>
           <p class="funcao_equipe">Lorem Ipsum is simply </p>
         </div>
@@ -414,32 +381,34 @@
     </main>
     
     <footer class="Rodape">
+
       <div class="box_rodape">
         <p class="Rodape-texto">
           Copyright RAS UFPB
         </p>
         <nav class="Redes-sociais">
           <a href="https://github.com/RAS-UFPB" target="_blank" style="text-decoration: none;">
-            <img class="Redes-sociais-logo" src="./Public/Redes_sociais/github.png" alt="github">
+            <img class="Redes-sociais-logo" src="./assets/Redes_sociais/github.png" alt="github">
           </a>
     
           <a href="https://www.instagram.com/rasufpb/" target="_blank" style="text-decoration: none;">
-            <img class="Redes-sociais-logo" src="./Public/Redes_sociais/instagram.png" alt="instagram">
+            <img class="Redes-sociais-logo" src="./assets/Redes_sociais/instagram.png" alt="instagram">
           </a>
     
           <a href="https://www.twitch.tv/rasufpb" target="_blank" style="text-decoration: none;">
-            <img class="Redes-sociais-logo" src="./Public/Redes_sociais/twitch.png" alt="twitch">
+            <img class="Redes-sociais-logo" src="./assets/Redes_sociais/twitch.png" alt="twitch">
           </a>
           
           <a href="https://www.youtube.com/channel/UC7ivKC1W7ScdBqfKEkJO68g" target="_blank" style="text-decoration: none;">
-            <img class="Redes-sociais-logo-last" src="./Public/Redes_sociais/youtube.png" alt="youtube">
+            <img class="Redes-sociais-logo-last" src="./assets/Redes_sociais/youtube.png" alt="youtube">
           </a>
         </nav>
       </div>
+      
     </footer>
 
-    <script src="./js/inicio_slide.js"></script>
-    <script src="./js/projetos_slide.js"></script>
-    <script src="./js/sobre_slide.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
+
+
