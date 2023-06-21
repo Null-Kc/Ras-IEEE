@@ -1,82 +1,423 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Colaboradores</title>
-  <style>
-    .equipe {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+  <head>
+    <title>Ras</title>
+    <link rel="stylesheet" href="./tudo.css">
     
-    .membros {
-      margin: 20px;
-      padding: 20px;
-      background-color: #f2f2f2;
-      border-radius: 10px;
-      text-align: center;
-      transition: transform 0.3s ease;
-      cursor: pointer;
-    }
-    
-    .membros:hover {
-      transform: scale(1.1);
-    }
-    
-    .membros img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 10px;
-    }
-    
-    .membros h3 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-    
-    .membros p {
-      font-size: 18px;
-    }
-    
-    @media (max-width: 768px) {
-      .membros {
-        flex-basis: 45%;
-      }
-    }
-    
-    @media (max-width: 480px) {
-      .membros {
-        flex-basis: 90%;
-      }
-    }
-  </style>
-</head>
-<body>
-  <section class="equipe">
-    <div class="membros">
-      <img src="../assets/lucas.png" alt="Colaborador 1">
-      <h3>Nome do Colaborador 1</h3>
-      <p>Cargo / Função</p>
-    </div>
-    
-    <div class="membros">
-      <img src="./assets/lelo.png" alt="Colaborador 2">
-      <h3>Nome do Colaborador 2</h3>
-      <p>Cargo / Função</p>
-    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  
+  </head>
+  <body>
+    <header class="Cabecalho">
+      <div class="box_cabecalho">
+        <img class="Logo" src="./assets/logo.png" alt="Ras">
+        <nav class="Menu">
 
-    <div class="membros">
-      <img src="../assets/alan.png" alt="Colaborador 3">
-      <h3>Nome do Colaborador 3</h3>
-      <p>Cargo / Função</p>
-    </div>
-    <div class="membros">
-      <img src="../assets/lan.png" alt="Colaborador 4">
-      <h3>Nome do Colaborador 4</h3>
-      <p>Cargo / Função</p>
-    </div>
-  </section>
-</body>
+          <a class="menu_title_inicio" href="#inicio">Inicio</a>
+          
+          <a class="menu_title_sobre"  href="#sobre">Sobre</a>
+          
+          <a class="menu_title_projetos" href="#projetos">Projetos</a>
+          
+          <a class="menu_title_equipe"  href="#equipe">Equipe</a>
+          
+          <a class="menu_title_contato" href="#contato">Contato</a>
+        </nav>
+
+        <nav class="menu_hamburguer" role="navigation">
+          <div class="menuToggle">
+            <input id="menu_hamburguer" type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="menu">
+              <li><a onclick="fecharmenu()" href="#inicio">Inicio</a></li>
+              <li><a onclick="fecharmenu()" href="#sobre">Sobre</a></li>
+              <li><a onclick="fecharmenu()" href="#projetos">Projetos</a></li>
+              <li><a onclick="fecharmenu()" href="#equipe">Equipe</a></li>
+              <li><a onclick="fecharmenu()" href="#contato">Contato</a></li>
+              <li>
+                <div class="box_redes_sociais_menu">
+                  <p class="texto_redes_sociais_menu">
+                    Copyright RAS UFPB
+                  </p>
+                  <nav class="redes_sociais_menu">
+                    <a href="https://github.com/RAS-UFPB" target="_blank" style="text-decoration: none;">
+                      <img class="redes_sociais_menu_logo" src="./assets/Redes_sociais/github.png" alt="github">
+                    </a>
+            
+                    <a href="https://www.instagram.com/rasufpb/" target="_blank" style="text-decoration: none;">
+                      <img class="redes_sociais_menu_logo" src="./assets/Redes_sociais/instagram.png" alt="instagram">
+                    </a>
+            
+                    <a href="https://www.twitch.tv/rasufpb" target="_blank" style="text-decoration: none;">
+                      <img class="redes_sociais_menu_logo" src="./assets/Redes_sociais/twitch.png" alt="twitch">
+                    </a>
+                    
+                    <a href="https://www.youtube.com/channel/UC7ivKC1W7ScdBqfKEkJO68g" target="_blank" style="text-decoration: none;">
+                      <img class="redes_sociais_menu_logo_last" src="./assets/Redes_sociais/youtube.png" alt="youtube">
+                    </a>
+                  </nav>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+      <div class="inicio" id="inicio">
+        <div class="carousel">
+          <div class="slides">
+            <input style="display: none;" type="radio" name="slide" id="slide1" checked>
+            <input style="display: none;" type="radio" name="slide" id="slide2">
+            <input style="display: none;" type="radio" name="slide" id="slide3">
+            <input style="display: none;" type="radio" name="slide" id="slide4">
+      
+            <div class="slide">
+              <div class="box_slide">
+                <div class="box_imagem_slide">
+                  <img class="imagem_slide" src="./assets/RASS.png" alt="Ras">
+                </div>
+      
+                <div class="box_texto_slide">
+                  <h2 class="title_slide">
+                    Lorem Ipsum
+                  </h2>
+                  <p class="text_slide">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorem laboriosam ducimus non ipsam fugiat quo eos, ipsa assumenda, repellendus est! Odit, accusamus blanditiis temporibus facilis eaque harum vitae. Rem.
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="slide">
+              <div class="box_slide">
+                <div class="box_imagem_slide">
+                  <img class="imagem_slide" src="./assets/GDA.png" alt="Ras">
+                </div>
+                <div class="box_texto_slide">
+                  <h2 class="title_slide">
+                    Lorem Ipsum
+                  </h2>
+                  <p class="text_slide">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorem laboriosam ducimus non ipsam fugiat quo eos, ipsa assumenda, repellendus est! Odit, accusamus blanditiis temporibus facilis eaque harum vitae. Rem.
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="slide">
+              <div class="box_slide">
+                <div class="box_imagem_slide">
+                  <img class="imagem_slide" src="./assets/GDR.png" alt="Ras">
+                </div>
+                <div class="box_texto_slide">
+                  <h2 class="title_slide">
+                    Lorem Ipsum
+                  </h2>
+                  <p class="text_slide">
+                    Lorem ipsum dolor, sit amet consectetur Lucas adipisicing elit. Quos dolorem laboriosam ducimus non ipsam fugiat quo eos, ipsa assumenda, repellendus est! Odit, accusamus blanditiis temporibus facilis eaque harum vitae. Rem.
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="slide">
+              <div class="box_slide">
+                <div class="box_imagem_slide">
+                  <img class="imagem_slide" src="./assets/GDA.png" alt="Ras">
+                </div>
+                <div class="box_texto_slide">
+                  <h2 class="title_slide">
+                    Lorem Ipsum
+                  </h2>
+                  <p class="text_slide">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorem laboriosam ducimus non ipsam fugiat quo eos, ipsa assumenda, repellendus est! Odit, accusamus blanditiis temporibus facilis eaque harum vitae. Rem.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="navigation">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+          <label for="slide4"></label>
+        </div>
+      </div>
+
+      <div class="sobre" id="sobre">
+        <div class="carousel_sobre">
+          <div class="slides_sobre">
+            <input style="display: none;" type="radio" name="slide" id="slide0_sobre" checked>
+            <input style="display: none;" type="radio" name="slide" id="slide1_sobre">
+            <input style="display: none;" type="radio" name="slide" id="slide2_sobre">
+            <input style="display: none;" type="radio" name="slide" id="slide3_sobre">
+            
+            <div class="slide_sobre">
+              <div class="box_slide_sobre">
+                <div class="box_imagem_slide_sobre">
+                  <img class="imagem_slide_sobre" src="./assets/sobre.png" alt="Ras">
+                </div>
+      
+                <div class="box_texto_slide_sobre">
+                  <h2 class="title_slide_sobre">
+                    Lorem Ipsum
+                  </h2>
+                  <p class="text_slide_sobre">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorem laboriosam ducimus non ipsam fugiat quo eos, ipsa assumenda, repellendus est! Odit, accusamus blanditiis temporibus facilis eaque harum vitae. Rem.
+                  </p>
+                </div>
+
+                <div class="box_botao_proximo_sobre">
+                  <button onclick="nextSlideSobre()" class="arrow"></button>
+                </div>
+              </div>
+            </div>
+      
+            <div class="slide_sobre">
+              <div class="box_slide_sobre">
+                <div class="box_imagem_slide_sobre">
+                  <img class="imagem_slide_sobre" src="./assets/sobre.png" alt="Ras">
+                </div>
+      
+                <div class="box_texto_slide_sobre">
+                  <h2 class="title_slide_sobre">
+                    Lorem Ipsum
+                  </h2>
+                  <p class="text_slide_sobre">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorem laboriosam ducimus non ipsam fugiat quo eos, ipsa assumenda, repellendus est! Odit, accusamus blanditiis temporibus facilis eaque harum vitae. Rem.
+                  </p>
+                </div>
+
+                <div class="box_botao_proximo_sobre">
+                  <button onclick="nextSlideSobre()" class="arrow"></button>
+                </div>
+              </div>
+            </div>
+      
+            <div class="slide_sobre">
+              <div class="box_slide_sobre">
+                <div class="box_imagem_slide_sobre">
+                  <img class="imagem_slide_sobre" src="./assets/sobre.png" alt="Ras">
+                </div>
+      
+                <div class="box_texto_slide_sobre">
+                  <h2 class="title_slide_sobre">
+                    Lorem Ipsum
+                  </h2>
+                  <p class="text_slide_sobre">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorem laboriosam ducimus non ipsam fugiat quo eos, ipsa assumenda, repellendus est! Odit, accusamus blanditiis temporibus facilis eaque harum vitae. Rem.
+                  </p>
+                </div>
+
+                <div class="box_botao_proximo_sobre">
+                  <button onclick="nextSlideSobre()" class="arrow"></button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="slide_sobre">
+              <div class="box_slide_sobre">
+                <div class="box_imagem_slide_sobre">
+                  <img class="imagem_slide_sobre" src="./assets/sobre.png" alt="Ras">
+                </div>
+      
+                <div class="box_texto_slide_sobre">
+                  <h2 class="title_slide_sobre">
+                    Lorem Ipsum
+                  </h2>
+                  <p class="text_slide_sobre">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorem laboriosam ducimus non ipsam fugiat quo eos, ipsa assumenda, repellendus est! Odit, accusamus blanditiis temporibus facilis eaque harum vitae. Rem.
+                  </p>
+                </div>
+
+                <div class="box_botao_proximo_sobre">
+                  <button onclick="nextSlideSobre()" class="arrow"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+      
+      <div class="projetos" id="projetos">
+        <div class="box_projetos">
+          <div class="previousSlideProjetos">
+            <button class="arrow_left" onclick="previousSlideProjetos()"></button>
+          </div>
+          
+          <div class="carousel_projetos">
+            <div class="slides_projetos">
+              <input style="display: none;" type="radio" name="slide" id="slide1_projetos" checked>
+              <input style="display: none;" type="radio" name="slide" id="slide2_projetos">
+              <input style="display: none;" type="radio" name="slide" id="slide3_projetos">
+      
+              
+              
+      
+              <div class="slide_projetos">
+                <img class="img_slide_projetos" width="120" src="./assets/projetos.png" alt="Ras">
+      
+                <h2 class="title_slide_projetos">
+                  Projeto 1
+                </h2>
+                <p class="text_slide_projetos">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+              
+      
+              <div class="slide_projetos">
+                <img class="img_slide_projetos" src="./assets/GDA.png" alt="Ras">
+      
+                <h2 class="title_slide_projetos">
+                  Projeto 2
+                </h2>
+                <p class="text_slide_projetos">
+                  Nullam at congue dui. Quisque ut dapibus magna.
+                </p>
+              </div>
+      
+              <div class="slide_projetos">
+                <img class="img_slide_projetos" src="./assets/GDR.png" alt="Ras">
+                <h2 class="title_slide_projetos">
+                  Projeto 3
+                </h2>
+                <p class="text_slide_projetos">
+                  Donec lacinia dignissim tortor vitae fermentum.
+                </p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="navigation_projetos">
+            <label style="display: none;" for="slide1_projetos"></label>
+            <label style="display: none;" for="slide2_projetos"></label>
+            <label style="display: none;" for="slide3_projetos"></label>
+          </div>
+      
+          <div class="nextSlideProjetos">
+            <button class="arrow" onclick="nextSlideProjetos()"></button>
+          </div>
+  
+          <div class="box_botoes">
+            <button class="arrow_left" onclick="previousSlideProjetos()"></button>
+            <button class="arrow" onclick="nextSlideProjetos()"></button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="equipe" id="equipe">
+
+        <div class="boc_equipe">
+          <div class="membros">
+            <img src="./assets/alan.png" alt="Imagem 1">
+            <h2 class="nome_equipe">Lorem Ipsum</h2>
+            <p class="funcao_equipe">Lorem Ipsum is simply </p>
+          </div>
+          <div class="membros">
+            <img class="membro_imagem" src="./assets/lan.png" alt="Imagem 2">
+            <h2 class="nome_equipe">Lorem Ipsum</h2>
+            <p class="funcao_equipe">Lorem Ipsum is simply </p>
+          </div>
+          <div class="membros">
+            <img class="membro_imagem" src="./assets/lucas.png" alt="Imagem 3">
+            <h2 class="nome_equipe">Lorem Ipsum</h2>
+            <p class="funcao_equipe">Lorem Ipsum is simply </p>
+          </div>
+          <div class="membros">
+            <img class="membro_imagem" src="./assets/lelo.png" alt="Imagem 4">
+            <h2 class="nome_equipe">Lorem Ipsum</h2>
+            <p class="funcao_equipe">Lorem Ipsum is simply </p>
+          </div>
+          <div class="membros">
+            <img class="membro_imagem" src="./assets/alan.png" alt="Imagem 1">
+            <h2 class="nome_equipe">Lorem Ipsum</h2>
+            <p class="funcao_equipe">Lorem Ipsum is simply </p>
+          </div>
+          <div class="membros">
+            <img class="membro_imagem" src="./assets/lan.png" alt="Imagem 2">
+            <h2 class="nome_equipe">Lorem Ipsum</h2>
+            <p class="funcao_equipe">Lorem Ipsum is simply </p>
+          </div>
+          <div class="membros">
+            <img class="membro_imagem" src="./assets/lucas.png" alt="Imagem 3">
+            <h2 class="nome_equipe">Lorem Ipsum</h2>
+            <p class="funcao_equipe">Lorem Ipsum is simply </p>
+          </div>
+          <div class="membros">
+            <img class="membro_imagem" src="./assets/lelo.png" alt="Imagem 4">
+            <h2 class="nome_equipe">Lorem Ipsum</h2>
+            <p class="funcao_equipe">Lorem Ipsum is simply </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contato" id="contato">
+    
+        <div class="box_contato">
+          <h2 class="texto_contato">
+            Contato:
+          </h2>
+          
+          <form class="formulario_de_contato" id="contact-form" type="submit">
+            <input type="hidden" name="contact_number">
+            <label class="texto_label">Name:</label>
+            <input class="enviar_formulario" type="text" name="user_name">
+            <label class="texto_label">Email:</label>
+            <input class="enviar_formulario" type="email" name="user_email">
+            <label class="texto_label">Message:</label>
+            <textarea class="mensagem_formulario" name="message" rows="4"></textarea>
+    
+            <button type="submit" class="botao_enviar_form">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Enviar
+            </button>
+            <button id="reset" type="reset" style="display: none;"></button>
+          </form>
+        </div>
+       
+      </div>
+      
+    </main>
+    
+    <footer class="Rodape">
+      <div class="box_rodape">
+        <p class="Rodape-texto">
+          Copyright RAS UFPB
+        </p>
+        <nav class="Redes-sociais">
+          <a href="https://github.com/RAS-UFPB" target="_blank" style="text-decoration: none;">
+            <img class="Redes-sociais-logo" src="./assets/Redes_sociais/github.png" alt="github">
+          </a>
+    
+          <a href="https://www.instagram.com/rasufpb/" target="_blank" style="text-decoration: none;">
+            <img class="Redes-sociais-logo" src="./assets/Redes_sociais/instagram.png" alt="instagram">
+          </a>
+    
+          <a href="https://www.twitch.tv/rasufpb" target="_blank" style="text-decoration: none;">
+            <img class="Redes-sociais-logo" src="./assets/Redes_sociais/twitch.png" alt="twitch">
+          </a>
+          
+          <a href="https://www.youtube.com/channel/UC7ivKC1W7ScdBqfKEkJO68g" target="_blank" style="text-decoration: none;">
+            <img class="Redes-sociais-logo-last" src="./assets/Redes_sociais/youtube.png" alt="youtube">
+          </a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
