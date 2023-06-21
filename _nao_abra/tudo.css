@@ -21,7 +21,7 @@
 }
 
 .box_cabecalho{
-  width: 90%;
+  width: 70%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -551,11 +551,10 @@
 }
 
 .carousel {
+  width: 70%;
   position: relative;
   overflow: hidden;
-  flex-wrap: wrap;
-  background-color: #EEEEEE;
-  
+  flex-wrap: wrap; 
 }
 
 .slides {
@@ -566,8 +565,8 @@
 .box_slide {
   flex-direction: row;
   display: flex;
-  width: 90vw;
-  background-color: #EEEEEE;
+  width: 100vw;
+  background-color: #000;
 }
 
 .imagem_slide {
@@ -579,7 +578,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 70%;
+  width: 50%;
 }
 
 .box_texto_slide {
@@ -638,15 +637,15 @@
 }
 
 .slides-1 {
-  transform: translateX(-90vw);
+  transform: translateX(-100vw);
 }
 
 .slides-2 {
-  transform: translateX(-180vw);
+  transform: translateX(-200vw);
 }
 
 .slides-3 {
-  transform: translateX(-270vw);
+  transform: translateX(-300vw);
 }
 
 @media (max-width: 900px){
@@ -983,11 +982,11 @@
 .equipe{
   display: flex;
   flex-wrap: wrap;
-  width: 98vw;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 50px 0 50px 0;
+
 }
 
 .nome_equipe{
@@ -1008,6 +1007,10 @@
 
 .membros{
   padding: 40px;
+}
+
+.membro_imagem{
+  width: 100%;
 }
 /* Fim Parte Equipe */
 
