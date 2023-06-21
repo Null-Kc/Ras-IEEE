@@ -1,144 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Equipe</title>
+  <title>Colaboradores</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      right: 0;
-      top: 0;
-      outline: none;
-      box-sizing: border-box;
-      font-family: 'Work Sans', sans-serif;
-    }
-
-    .center {
-      min-width: 320px;
-    }
-    /* CSS classes */
-
-    .Membros_title {
-      width: 100%;
-      background-color: #EEEEEE;
+    .equipe {
       display: flex;
-      color: #97002B;
-      flex-direction: row;
-      justify-content: space-between;
       flex-wrap: wrap;
-      align-items:center;
-      justify-content:center;
-      padding: 20px 0 0 0;
+      justify-content: center;
     }
     
-    .Membros_box {
-      width: 100%;
-      background-color: #EEEEEE;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-    
-    .membro_card{
-      margin-top: 20px;
-      width: 350px;
-      display: flex;
-      align-items:center;
-      justify-content:center;
-      flex-wrap: wrap;
-    }
-    
-    .texto_membro { 
-      display: block;
-      align-items:center;
-      justify-content:center;
+    .membros {
+      margin: 20px;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 10px;
       text-align: center;
-      margin-bottom: 20px;
-      margin-top: 20px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
     }
     
-    .texto_membro h1{
-      color: #97002B;
-      font-size: 25px;
+    .membros:hover {
+      transform: scale(1.1);
     }
     
-    .texto_membro p{
-      color: #681371;
-      margin-top: 10px;
-      font-size: 20px;
+    .membros img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
     }
     
-    @media screen and (max-width: 1300px) {
-      .membro_card {
-        width: 300px;
+    .membros h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .membros p {
+      font-size: 18px;
+    }
+    
+    @media (max-width: 768px) {
+      .membros {
+        flex-basis: 45%;
       }
     }
     
-    @media screen and (max-width: 650px) {
-      .membro_card {
-        width: 50%;
+    @media (max-width: 480px) {
+      .membros {
+        flex-basis: 90%;
       }
-    }
-    
-    @media screen and (max-width: 480px) {
-      .Membros_box{
-        align-items:center;
-        justify-content:center;
-        min-width: 320px;
-      }
-      .membro_card {
-        width: 300px;
-      }
-    }
-    
-    .custom-shape-divider-top-1670772060 {
-      top: 0;
-      left: 0;
-      width: 100%;
-      overflow: hidden;
-      line-height: 0;
-      background-color: #EEEEEE;
-    }
-    
-    .custom-shape-divider-top-1670772060 svg {
-      position: static;
-      display: block;
-      width: calc(100% + 1.3px);
-      height: 100px;
-    }
-    
-    .custom-shape-divider-top-1670772060 .shape-fill {
-      fill: #681371;
     }
   </style>
 </head>
 <body>
-  <div class="Membros_title">
-    <h1>Título da Equipe</h1>
-  </div>
-  
-  <div class="Membros_box">
-    <div class="membro_card">
-      <div class="texto_membro">
-        <h1>Membro 1</h1>
-        <p>Descrição do membro 1.</p>
-      </div>
+  <section class="equipe">
+    <div class="membros">
+      <img src="../assets/lucas.png" alt="Colaborador 1">
+      <h3>Nome do Colaborador 1</h3>
+      <p>Cargo / Função</p>
     </div>
     
-    <div class="membro_card">
-      <div class="texto_membro">
-        <h1>Membro 2</h1>
-        <p>Descrição do membro 2.</p>
-      </div>
+    <div class="membros">
+      <img src="./assets/lelo.png" alt="Colaborador 2">
+      <h3>Nome do Colaborador 2</h3>
+      <p>Cargo / Função</p>
     </div>
-    
-    <div class="membro_card">
-      <div class="texto_membro">
-        <h1>Membro 3</h1>
-        <p>Descrição do membro 3.</p>
-      </div>
+
+    <div class="membros">
+      <img src="../assets/alan.png" alt="Colaborador 3">
+      <h3>Nome do Colaborador 3</h3>
+      <p>Cargo / Função</p>
     </div>
-  </div>
+    <div class="membros">
+      <img src="../assets/lan.png" alt="Colaborador 4">
+      <h3>Nome do Colaborador 4</h3>
+      <p>Cargo / Função</p>
+    </div>
+  </section>
 </body>
 </html>

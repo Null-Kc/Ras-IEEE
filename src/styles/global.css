@@ -2,5 +2,10 @@
   margin: 0;
   border: 0;
   font-family: Arial, Helvetica, sans-serif; 
-  position: relative;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #EEEEEE;
 }

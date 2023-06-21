@@ -1,6 +1,6 @@
-.box_botao_proximo{
-  margin-top: 20vh;
-  margin-left: 5vw;
+.box_botao_proximo_sobre{
+  margin-top: 5vh;
+  margin-right: 5vw;
   cursor: pointer;
 }
 
@@ -39,14 +39,16 @@
 .sobre{
   padding-top: 30px;
   padding-bottom: 50px;
-  width: 100%;
   background-color: #EEEEEE;
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: center;
   align-items: center;
 }
 
 .carousel_sobre {
+  max-width: 1200px;
   position: relative;
   overflow: hidden;
   flex-wrap: wrap;
@@ -61,12 +63,15 @@
 .box_slide_sobre {
   flex-direction: row;
   display: flex;
-  width: 90vw;
+  width: 100vw;
   background-color: #EEEEEE;
+  
 }
 
 .imagem_slide_sobre {
-  width: 50%;
+  width: 100%;
+  max-width: 350px;
+
 }
 
 .box_imagem_slide_sobre {
@@ -75,10 +80,16 @@
   align-items: center;
   text-align: center;
   width: 70%;
+  margin-left: 30px;
+  max-width: 350px;
+  
 }
 
 .box_texto_slide_sobre {
-  width: 50%;
+  width: 80%;
+  max-width: 650px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -117,9 +128,9 @@
     margin-bottom: 0;
   }
   
-  .box_botao_proximo_teste{
-    margin-top: 20vh;
-    margin-left: 0;
+  .box_botao_proximo_sobre{
+    margin-top: 1vh;
+    margin-right: 0;
 
   }
 

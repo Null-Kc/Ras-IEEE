@@ -1,6 +1,5 @@
 .Rodape {
   width: 100%;
-  
   background-color: #EEEEEE;
   left: 0;
   bottom: 0;
@@ -11,6 +10,7 @@
 }
 
 .box_rodape{
+  max-width: 1200px;
   width: 90%;
   padding: 20px 0;
   display: flex;

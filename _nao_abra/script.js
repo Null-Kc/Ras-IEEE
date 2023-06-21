@@ -9,7 +9,7 @@ function habilitarScroll() {
 
 var li = document.getElementById("menu_hamburguer");
 var menu = false;
-
+console.log(li);
 li.addEventListener("click", function(event) {
   if(menu == false){
     menu = true;

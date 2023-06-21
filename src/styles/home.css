@@ -2,6 +2,8 @@
   width: 100%;
   background-color: #EEEEEE;
   display: flex;
+  margin-top: 40px;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -10,38 +12,44 @@
   position: relative;
   overflow: hidden;
   flex-wrap: wrap;
-  background-color: #EEEEEE;
-  
+  max-width: 1200px;
+  width: 100vw;
 }
 
 .slides {
+  max-width: 1200px;
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
 
 .box_slide {
+  width: 100vw;
   flex-direction: row;
   display: flex;
-  width: 90vw;
-  background-color: #EEEEEE;
 }
 
 .imagem_slide {
-  width: 75%;
+  width: 100%;
 }
 
 .box_imagem_slide {
   display: flex;
+  margin-left: 30px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 70%;
+  width: 50%;
+  max-width: 500px;
+  
 }
 
 .box_texto_slide {
   width: 50%;
+  margin-left: 30px;
+  margin-right: 30px;
   margin-top: auto;
   margin-bottom: auto;
+  max-width: 600px;
 }
 
 .title_slide {
@@ -59,11 +67,7 @@
 }
 
 .navigation {
-  position: absolute;
-  top: auto;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -94,27 +98,31 @@
 }
 
 .slides-1 {
-  transform: translateX(-90vw);
+  transform: translateX(-100vw);
 }
 
 .slides-2 {
-  transform: translateX(-180vw);
+  transform: translateX(-200vw);
 }
 
 .slides-3 {
-  transform: translateX(-270vw);
+  transform: translateX(-300vw);
 }
 
 @media (max-width: 900px){
   .box_slide {
       width: 100vw;
-      
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
 
+    }
+    .box_imagem_slide {
+      margin-left: 0;
+      width: 90%;
+      
     }
 
     .carousel{
@@ -126,19 +134,4 @@
       width: 90%;
     }
 
-    .slides-0 {
-    transform: translateX(0);
-  }
-
-  .slides-1 {
-    transform: translateX(-100vw);
-  }
-
-  .slides-2 {
-    transform: translateX(-200vw);
-  }
-
-  .slides-3 {
-    transform: translateX(-300vw);
-  }
   }
