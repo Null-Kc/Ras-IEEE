@@ -11,15 +11,15 @@
         <img class="Logo" src="./assets/logo.png" alt="Ras">
         <nav class="Menu">
 
-          <a class="menu_title_inicio" href="#">Inicio</a>
+          <a class="menu_title_inicio" href="#inicio">Inicio</a>
           
-          <a class="menu_title_sobre"  href="#">Sobre</a>
+          <a class="menu_title_sobre"  href="#sobre">Sobre</a>
           
-          <a class="menu_title_projetos" href="#">Projetos</a>
+          <a class="menu_title_projetos" href="#projetos">Projetos</a>
           
-          <a class="menu_title_equipe"  href="#">Equipe</a>
+          <a class="menu_title_equipe"  href="#equipe">Equipe</a>
           
-          <a class="menu_title_contato" href="#">Contato</a>
+          <a class="menu_title_contato" href="#contato">Contato</a>
         </nav>
 
         <nav class="menu_hamburguer" role="navigation">
@@ -29,11 +29,11 @@
             <span></span>
             <span></span>
             <ul class="menu">
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Sobre</a></li>
-              <li><a href="#">Projetos</a></li>
-              <li><a href="#">Equipe</a></li>
-              <li><a href="#">Contato</a></li>
+              <li><a href="#inicio" onclick="fecharmenu()">Inicio</a></li>
+              <li><a href="#sobre" onclick="fecharmenu()">Sobre</a></li>
+              <li><a href="#projetos" onclick="fecharmenu()">Projetos</a></li>
+              <li><a href="#equipe" onclick="fecharmenu()">Equipe</a></li>
+              <li><a href="#contato" onclick="fecharmenu()">Contato</a></li>
               <li>
                 <div class="box_redes_sociais_menu">
                   <p class="texto_redes_sociais_menu">
@@ -68,7 +68,7 @@
 
     <main>
 
-      <div class="inicio">
+      <div class="inicio" id="inicio">
         <div class="carousel">
           <div class="slides slides-0">
             <input style="display: none;" type="radio" name="slide" id="slide1" checked>
@@ -151,7 +151,7 @@
         </div>
       </div>
 
-      <div class="sobre">
+      <div class="sobre" id="sobre">
         <div class="carousel_sobre">
           <div class="slides_sobre">
             <input style="display: none;" type="radio" name="slide" id="slide0_sobre" checked>
@@ -247,7 +247,7 @@
     
       </div>
       
-      <div class="projetos">
+      <div class="projetos" id="projetos">
         <div class="carousel_projetos">
           <div class="slides_projetos">
             <input style="display: none;" type="radio" name="slide" id="slide1_projetos" checked>
@@ -305,7 +305,7 @@
         </div>
       </div>
 
-      <div class="equipe">
+      <div class="equipe" id="equipe">
         <div class="membros">
           <img src="./assets/alan.png" alt="Imagem 1">
           <h2 class="nome_equipe">Lorem Ipsum</h2>
@@ -348,7 +348,7 @@
         </div>
       </div>
 
-      <div class="contato">
+      <div class="contato" id="contato">
     
         <div class="box_contato">
           <h2 class="texto_contato">

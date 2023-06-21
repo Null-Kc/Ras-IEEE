@@ -3,7 +3,6 @@
   margin: 0;
   border: 0;
   font-family: Arial, Helvetica, sans-serif; 
-  position: relative;
 }
 /* FIM Global */
 
@@ -15,7 +14,7 @@
   left: 0;
   top: 0;
   z-index: 1;
-  position: static;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,11 +38,9 @@
 }
 
 .Menu{
-  justify-content: right;
   display: inline-block;
   margin-top: auto;
   margin-bottom: auto;
-  
   flex-direction: row;
 }
 
