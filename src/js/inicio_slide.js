@@ -18,7 +18,7 @@ function activateSlide(index) {
 
 function nextSlide() {
   slideIndex++;
-    if (slideIndex >= slides.children.length) {
+    if (slideIndex >= 4) {
       slideIndex = 0;
     }
     slides.classList.remove('slides-0', 'slides-1', 'slides-2', 'slides-3');
@@ -26,7 +26,7 @@ function nextSlide() {
     activateSlide(slideIndex);
   }
 
-  setInterval(nextSlide, 10000);
+  setInterval(nextSlide, 5000);
 
   navigation.addEventListener('click', function(event) {
     if (event.target.tagName === 'LABEL') {
