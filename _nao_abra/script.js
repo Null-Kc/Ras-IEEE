@@ -49,25 +49,24 @@ function activateSlide(index) {
 
 function nextSlide() {
   slideIndex++;
-    if (slideIndex >= slides.children.length) {
+    if (slideIndex >= 4) {
       slideIndex = 0;
     }
+  slides.classList.remove('slides-0', 'slides-1', 'slides-2', 'slides-3');
+  slides.classList.add(`slides-${slideIndex}`);
+  activateSlide(slideIndex);
+}
+setInterval(nextSlide, 5000);
+
+navigation.addEventListener('click', function(event) {
+  if (event.target.tagName === 'LABEL') {
+    const index = Array.from(navigation.children).indexOf(event.target);
+    slideIndex = index;
     slides.classList.remove('slides-0', 'slides-1', 'slides-2', 'slides-3');
     slides.classList.add(`slides-${slideIndex}`);
     activateSlide(slideIndex);
   }
-
-  setInterval(nextSlide, 10000);
-
-  navigation.addEventListener('click', function(event) {
-    if (event.target.tagName === 'LABEL') {
-      const index = Array.from(navigation.children).indexOf(event.target);
-      slideIndex = index;
-      slides.classList.remove('slides-0', 'slides-1', 'slides-2', 'slides-3');
-      slides.classList.add(`slides-${slideIndex}`);
-      activateSlide(slideIndex);
-    }
-  });
+});
 
 // Fim Inicio
 
