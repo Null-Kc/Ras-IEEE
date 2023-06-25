@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+.align-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.none{
+  display: none;
+}

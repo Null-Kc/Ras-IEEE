@@ -1,35 +1,32 @@
-.contato {
-  width: 100%;
+.contact {
+  width: 100vw;
   background-color: #97002B;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.box_contato{
-  width: 90%;
-  max-width: 1100px;
+.contact-box{
+  width: 90vw;
+  max-width: 1200px;
   padding: 50px 0;
 }
 
-.formulario_de_contato {
-  display: flex;
-  flex-direction: column;
-}
-
-.texto_contato {
+.contact-title {
   text-align: center;
   color: #ffffff;
   font-size: 40px;
   font-weight: bold;
 }
 
-.enviar_formulario {
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-form {
   font-size: 20px; 
   padding: 5px 5px;
 }
 
-.texto_label {
+.label-text {
   margin-top: 30px;
   font-size: 20px;
   color: #ffffff;
@@ -37,14 +34,12 @@
   padding: 0 0 10px 0;
 }
 
-.mensagem_formulario {
+.message{
   resize: none;
-  font-size: 20px; 
-  padding: 5px 5px;
   margin-bottom: 50px;
 }
 
-.botao_enviar_form {
+.submit-form-button {
   border-radius: 12px;
   border: 3px outset #681371;
   position: relative;
@@ -55,18 +50,17 @@
   text-transform: uppercase;
   letter-spacing: 4px;
   overflow: hidden;
-  box-shadow: 0 0 10px rgb(0, 0, 0, 1);
-  font-family: verdana;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 1); 
   font-size: 20px;
   font-weight: bolder;
   text-decoration: none;
-  margin-left: auto; /* Alinhar à direita */
+  margin-left: auto;
   background:linear-gradient(160deg, #681371, #681371);
   text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
   transition: 0.2s;
 }
 
-.botao_enviar_form:active {
+.submit-form-button:active {
   border: 3px outset #681371;
   color: #fff;
   background: linear-gradient(160deg, #681371, #681371);
@@ -75,12 +69,12 @@
   transition-delay: 1s;
 }
 
-.botao_enviar_form span {
+.submit-form-button span {
   position: absolute;
   display: block;
 }
 
-.botao_enviar_form span:nth-child(1) {
+.submit-form-button span:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
@@ -88,12 +82,12 @@
   background: linear-gradient(90deg, transparent, #eee);
 }
 
-.botao_enviar_form:active span:nth-child(1) {
+.submit-form-button:active span:nth-child(1) {
   left: 100%;
   transition: 1s;
 }
 
-.botao_enviar_form span:nth-child(2) {
+.submit-form-button span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
@@ -101,13 +95,13 @@
   background: linear-gradient(180deg, transparent, #eee);
 }
 
-.botao_enviar_form:active span:nth-child(2) {
+.submit-form-button:active span:nth-child(2) {
   top: 100%;
   transition: 1s;
   transition-delay: 0.25s;
 }
 
-.botao_enviar_form span:nth-child(3) {
+.submit-form-button span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
@@ -115,13 +109,13 @@
   background: linear-gradient(270deg, transparent, #eee);
 }
 
-.botao_enviar_form:active span:nth-child(3) {
+.submit-form-button:active span:nth-child(3) {
   right: 100%;
   transition: 1s;
   transition-delay: 0.5s;
 }
 
-.botao_enviar_form span:nth-child(4) {
+.submit-form-button span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;
@@ -129,13 +123,14 @@
   background: linear-gradient(360deg, transparent, #eee);
 }
 
-.botao_enviar_form:active span:nth-child(4) {
+.submit-form-button:active span:nth-child(4) {
   bottom: 100%;
   transition: 1s;
   transition-delay: 0.75s;
 }
+
 @media (max-width: 900px){
-  .botao_enviar_form {
+  .submit-form-button {
     margin-left: auto;
     margin-right: auto;
   }

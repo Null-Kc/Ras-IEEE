@@ -1,0 +1,157 @@
+.projects {
+  width: 100vw;
+  background-color: #681371;
+}
+
+.projects-box {
+  width: 90vw;
+  max-width: 1200px;
+  padding: 30px 0 0 0;
+}
+
+.projects-carousel {
+  position: relative;
+  width: 80%;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.project-slides {
+  display: flex;
+  width: 90%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-slide {
+  flex: auto;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #97002B;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  padding: 30px 0;
+}
+
+.project-slide:hover {
+  transform: scale(1.1);
+}
+
+.project-slide.active_slide {
+  display: flex;
+}
+
+.project-image{
+  width: 80%;
+  max-width: 600px;
+  padding-bottom: 30px;
+}
+
+.project-name {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.project-description {
+  font-size: 30px;
+  width: 90%;
+  color: #ffffff;
+}
+
+.button-box{
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 2px solid #ffffff;
+}
+
+.buttons-box{
+  justify-content: space-between;
+  width: 100%;
+  display: none;
+}
+
+.arrow {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #681371;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  overflow: hidden;
+}
+
+.arrow-left::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border-bottom: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.arrow-left:hover::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.arrow-right::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.arrow-right:hover::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+@media (max-width: 900px){
+  .projects-box {
+    flex-direction: column;
+    display: block;
+    text-align: center;
+  }
+
+  .projects-carousel {
+    width: 90vw;
+  }
+
+  .button-box {
+    display: none;
+  }
+
+  .buttons-box {
+    display: block;
+  }  
+
+  .arrow {
+    background-color: #97002B;
+  }
+
+  .arrow-left{
+    margin-right: 20px;
+  }
+
+  .arrow-right{
+    margin-left: 20px;
+  }
+}

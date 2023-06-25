@@ -7,7 +7,7 @@ function habilitarScroll() {
   document.body.style.overflow = '';
 }
 
-var li = document.getElementById("menu_hamburguer");
+var li = document.getElementById("menu-hamburguer");
 var menu = false;
 
 
@@ -24,5 +24,5 @@ li.addEventListener("click", function(event) {
 })
 
 function fecharmenu(){
-  document.getElementById('menu_hamburguer').click();
+  document.getElementById('menu-hamburguer').click();
 }

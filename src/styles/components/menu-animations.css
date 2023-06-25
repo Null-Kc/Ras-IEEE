@@ -1,0 +1,320 @@
+.header-menu-title-inicio {
+  color: #97002B;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 10px;
+  position: relative;
+}
+
+.header-menu-title-inicio::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #681371;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header-menu-title-inicio::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #97002B;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header-menu-title-inicio:hover::before,
+.header-menu-title-inicio:hover::after {
+  transform: scaleX(1);
+}
+
+.header-menu-title-inicio:hover {
+  color: #681371;
+}
+
+.header-menu-title-inicio:hover::before {
+  animation: wiggle 1s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px) rotateZ(-5deg);
+  }
+  50% {
+    transform: translateX(0) rotateZ(0);
+  }
+  75% {
+    transform: translateX(5px) rotateZ(5deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.header-menu-title-sobre {
+  color: #97002B;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-decoration: none;
+  margin-right: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-menu-title-sobre::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #681371;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-menu-title-sobre:hover::before {
+  transform: scaleX(1);
+}
+
+.header-menu-title-sobre:hover {
+  color: #681371;
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-menu-title-sobre:hover::before {
+  background-color: #97002B;
+}
+
+.header-menu-title-sobre::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #681371;
+  transform: translateX(-50%) rotate(45deg);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-menu-title-sobre:hover::after {
+  opacity: 1;
+}
+
+.header-menu-title-projetos {
+  color: #97002B;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 10px;
+  position: relative;
+}
+
+.header-menu-title-projetos::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #681371;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header-menu-title-projetos::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #97002B;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header-menu-title-projetos:hover::before,
+.header-menu-title-projetos:hover::after {
+  transform: scaleX(1);
+}
+
+.header-menu-title-projetos:hover {
+  color: #681371;
+}
+
+.header-menu-title-projetos:hover::before {
+  animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.header-menu-title-equipe {
+  color: #97002B;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 10px;
+  position: relative;
+}
+
+.header-menu-title-equipe::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #681371;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-menu-title-equipe:hover::before {
+  transform: scaleX(1);
+}
+
+.header-menu-title-equipe::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #97002B;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-menu-title-equipe:hover::after {
+  transform: scaleX(1);
+}
+
+.header-menu-title-equipe:hover {
+  color: #681371;
+}
+
+.header-menu-title-equipe:hover::before,
+.header-menu-title-equipe:hover::after {
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.header-menu-title-contato {
+  color: #97002B;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 10px;
+  position: relative;
+}
+
+.header-menu-title-contato::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #681371;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-menu-title-contato:hover::before {
+  transform: scaleX(1);
+}
+
+.header-menu-title-contato::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #97002B;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-menu-title-contato:hover::after {
+  transform: scaleX(1);
+}
+
+.header-menu-title-contato:hover {
+  color: #681371;
+}
+
+.header-menu-title-contato:hover::before,
+.header-menu-title-contato:hover::after {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

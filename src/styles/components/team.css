@@ -1,0 +1,48 @@
+.team {
+  width: 100vw;
+  background-color: #681371;
+
+}
+
+.team-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw;
+  padding: 30px 0;
+  max-width: 1200px;
+}
+
+.members-box {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.members-box:hover {
+  transform: scale(1.1);
+}
+
+.members-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.members-name{
+  padding-top: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #97002B;
+}
+
+.members-function {
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #681371;
+}
