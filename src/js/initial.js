@@ -26,14 +26,14 @@ function nextSlide() {
     activateSlide(slideIndex);
   }
 
-  setInterval(nextSlide, 5000);
+setInterval(nextSlide, 5000);
 
-  navigation.addEventListener('click', function(event) {
-    if (event.target.tagName === 'LABEL') {
-      const index = Array.from(navigation.children).indexOf(event.target);
-      slideIndex = index;
-      slides.classList.remove('slides-0-initial', 'slides-1-initial', 'slides-2-initial', 'slides-3-initial');
-      slides.classList.add(`slides-${slideIndex}-initial`);
-      activateSlide(slideIndex);
-    }
-  });
+navigation.addEventListener('click', function(event) {
+  if (event.target.tagName === 'LABEL') {
+    const index = Array.from(navigation.children).indexOf(event.target);
+    slideIndex = index;
+    slides.classList.remove('slides-0-initial', 'slides-1-initial', 'slides-2-initial', 'slides-3-initial');
+    slides.classList.add(`slides-${slideIndex}-initial`);
+    activateSlide(slideIndex);
+  }
+});
