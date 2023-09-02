@@ -31,3 +31,7 @@ emailjs.init('your_Public_key');
 emailjs.sendForm('your_service_id', 'your_template_id', this)
 
 essas podem ser conseguidas no site do [Email.js](https://www.emailjs.com/).
+
+
+## Pasta _Nao_Abra
+- `/_nao_abra` : Contem os arquivos usando para conseguir hospedar o projeto na vercel, nao usar esse codigo de base
