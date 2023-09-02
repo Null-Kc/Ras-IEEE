@@ -1,12 +1,12 @@
 .about{
-  width: 100vw;
+  width: 100%;
   background-color: #EEEEEE;
   padding-top: 30px;
   padding-bottom: 50px;
 }
 
 .about-box{
-  width: 90vw;
+  width: 90%;
   max-width: 1200px;
   display: flex;
   flex-direction: row;
@@ -53,14 +53,12 @@
   color: #97002B;
   font-size: 40px;
   font-weight: bold;
-
 }
 
 .about-text {
   color: #681371;
   font-size: 20px;
   font-weight: bold;
-
 }
 
 .arrow-about {
@@ -117,7 +115,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
   .about-slide-box{
     width: 100vw;
@@ -135,21 +132,16 @@
     padding: 30px 0;
     width: 90%;
   }
-
   .slide-0-about {
     transform: translateX(0);
   }
-  
   .slide-1-about {
     transform: translateX(-100vw);
   }
-  
   .slide-2-about {
     transform: translateX(-200vw);
   }
-  
   .slide-3-about {
     transform: translateX(-300vw);
   }
-
 }

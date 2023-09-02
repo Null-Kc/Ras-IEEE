@@ -155,7 +155,6 @@
 .menuToggle input:checked ~ .menu {
   transform: translate(0, 0);
   transition: transform 1s;
- 
 }
 
 .header-box-social-networks {
@@ -207,13 +206,11 @@
   .header-menu {
     display: none;
   }
-
   .menu-hamburguer{
     display: block;
     position: static;
     width: 100%;
   }
-
   .header-logo-social-networks {
     width: 40px;
     height: 40px;
@@ -579,7 +576,6 @@
   margin-left: 30px;
   justify-content: center;
   align-items: center;
-
   width: 50%;
   max-width: 500px;
   
@@ -671,33 +667,29 @@
     justify-content: center;
     align-items: center;
   }
-  
   .initial-carousel{
     margin-bottom: 50px;
   }
-
   .initial-img-box {
     margin-left: 0;
     width: 90%;
   }
-  
   .initial-text-box{
     bottom: 50px;
     width: 90%;
   }
-
 }
 
 /* sobre  */
 .about{
-  width: 100vw;
+  width: 100%;
   background-color: #EEEEEE;
   padding-top: 30px;
   padding-bottom: 50px;
 }
 
 .about-box{
-  width: 90vw;
+  width: 90%;
   max-width: 1200px;
   display: flex;
   flex-direction: row;
@@ -826,33 +818,28 @@
     padding: 30px 0;
     width: 90%;
   }
-
   .slide-0-about {
     transform: translateX(0);
   }
-  
   .slide-1-about {
     transform: translateX(-100vw);
   }
-  
   .slide-2-about {
     transform: translateX(-200vw);
   }
-  
   .slide-3-about {
     transform: translateX(-300vw);
   }
-
 }
 
 /* project  */
 .projects {
-  width: 100vw;
+  width: 100%;
   background-color: #681371;
 }
 
 .projects-box {
-  width: 90vw;
+  width: 90%;
   max-width: 1200px;
   padding: 30px 0 0 0;
 }
@@ -978,27 +965,21 @@
     display: block;
     text-align: center;
   }
-
   .projects-carousel {
     width: 90vw;
   }
-
   .button-box {
     display: none;
   }
-
   .buttons-box {
     display: block;
   }  
-
   .arrow {
     background-color: #97002B;
   }
-
   .arrow-left{
     margin-right: 20px;
   }
-
   .arrow-right{
     margin-left: 20px;
   }
@@ -1007,7 +988,7 @@
 
 /* equipe  */
 .team {
-  width: 100vw;
+  width: 100%;
   background-color: #681371;
 
 }
@@ -1015,7 +996,7 @@
 .team-box {
   display: flex;
   flex-wrap: wrap;
-  width: 90vw;
+  width: 90%;
   padding: 30px 0;
   max-width: 1200px;
 }
@@ -1057,12 +1038,12 @@
 
 /* contact  */
 .contact {
-  width: 100vw;
+  width: 100%;
   background-color: #97002B;
 }
 
 .contact-box{
-  width: 90vw;
+  width: 90%;
   max-width: 1200px;
   padding: 50px 0;
 }
@@ -1246,7 +1227,6 @@
     flex-direction: column;
     text-align: center;
     padding: 20px 0;
-
   }
   .footer-text{
     margin-left: 0;

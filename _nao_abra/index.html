@@ -9,480 +9,342 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>  
   </head>
   <body>
-    
-    <header class="header align-center">
-      
+     <!-- Cria o Header que aparece no site -->
+     <header class="header align-center">
       <div class="header-box">
-        
+        <!-- Logo da ras -->
         <img class="header-logo" src="./assets/logo.png" alt="Ras">
-        
+        <!-- Menu que aparece no Desktop -->
         <nav class="header-menu">
-
           <a class="header-menu-title-inicio" href="#initial">Inicio</a>
-          
           <a class="header-menu-title-sobre"  href="#about">Sobre</a>
-          
           <a class="header-menu-title-projetos" href="#projects">Projetos</a>
-          
           <a class="header-menu-title-equipe"  href="#team">Equipe</a>
-          
           <a class="header-menu-title-contato" href="#contact">Contato</a>
-
         </nav>
-
+        <!-- Menu que aparece no Mobile -->
         <nav class="menu-hamburguer" role="navigation">
-          
           <div class="menuToggle">
-            
             <input id="menu-hamburguer" type="checkbox" />
             <span></span>
             <span></span>
             <span></span>
-
             <ul class="menu">
-              
-              <li><a onclick="fecharmenu()" href="#initial">Inicio</a></li>
-              <li><a onclick="fecharmenu()" href="#about">Sobre</a></li>
-              <li><a onclick="fecharmenu()" href="#projects">Projetos</a></li>
-              <li><a onclick="fecharmenu()" href="#team">Equipe</a></li>
-              <li><a onclick="fecharmenu()" href="#contact">Contato</a></li>
-              
+              <li><a onclick="closemenu()" href="#initial">Inicio</a></li>
+              <li><a onclick="closemenu()" href="#about">Sobre</a></li>
+              <li><a onclick="closemenu()" href="#projects">Projetos</a></li>
+              <li><a onclick="closemenu()" href="#team">Equipe</a></li>
+              <li><a onclick="closemenu()" href="#contact">Contato</a></li>
               <li>
-                
                 <div class="header-box-social-networks">
-                  
                   <p class="header-text">
-                    Copyright RAS UFPB
+                    Copyright Pedro Lucas
                   </p>
-                  
                   <nav class="header-social-networks">
-                    
-                    <a href="https://github.com/RAS-UFPB" target="_blank" style="text-decoration: none;">
+                    <a href="https://github.com/RAS-UFPB" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
                       <img class="header-logo-social-networks" src="./assets/Redes_sociais/github.png" alt="github">
                     </a>
-            
-                    <a href="https://www.instagram.com/rasufpb/" target="_blank" style="text-decoration: none;">
+                    <a href="https://www.instagram.com/rasufpb/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
                       <img class="header-logo-social-networks" src="./assets/Redes_sociais/instagram.png" alt="instagram">
                     </a>
-            
-                    <a href="https://www.twitch.tv/rasufpb" target="_blank" style="text-decoration: none;">
+                    <a href="https://www.twitch.tv/rasufpb" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
                       <img class="header-logo-social-networks" src="./assets/Redes_sociais/twitch.png" alt="twitch">
                     </a>
-                    
-                    <a href="https://www.youtube.com/channel/UC7ivKC1W7ScdBqfKEkJO68g" target="_blank" style="text-decoration: none;">
+                    <a href="https://www.youtube.com/channel/UC7ivKC1W7ScdBqfKEkJO68g" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
                       <img class="header-logo-social-networks-last" src="./assets/Redes_sociais/youtube.png" alt="youtube">
                     </a>
                   </nav>
                 </div>
-
               </li>
-
             </ul>
-
           </div>
-          
         </nav>
-
       </div>
-
     </header>
 
     <main>
-
+      <!-- Cria a tela inicial -->
       <section class="initial align-center" id="initial">
-
+        <!-- Cria o Componente Carrosel -->
         <div id="initial-carousel" class="initial-carousel">
-
+          <!-- Cria o Slider que aparece na tela inicial -->
           <div id="initial-slides" class="initial-slides">
-            
             <input class="none" type="radio" name="slide" id="slide-1-initial" >
             <input class="none" type="radio" name="slide" id="slide-2-initial">
             <input class="none" type="radio" name="slide" id="slide-3-initial">
             <input class="none" type="radio" name="slide" id="slide-4-initial">
-      
+            
+            <!-- Crie o primeiro Slide que aparece na tela inicial -->
             <div class="initial-slide">
-              
               <div class="initial-slide-box">
-    
                 <div class="initial-img-box">
-                  
-                  <img class="initial-img" src="./assets/ras.png" alt="RAS">
-                
+                  <img class="initial-img" src="../src/assets/ras.png" alt="RAS">
                 </div>
-      
                 <div class="initial-text-box">
-
                   <h2 class="initial-title">
                     Lorem Ipsum
                   </h2>
-
                   <p class="initial-text">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorem laboriosam ducimus non ipsam fugiat quo eos, ipsa assumenda, repellendus est! Odit, accusamus blanditiis temporibus facilis eaque harum vitae. Rem.
                   </p>
-
                 </div>
-
               </div>
-
             </div>
             
+            <!-- Crie o segundo Slide que aparece na tela inicial -->
             <div class="initial-slide">
-              
               <div class="initial-slide-box">
-    
                 <div class="initial-img-box">
-
-                  <img class="initial-img" src="./assets/GDA.png" alt="gda">
-                
+                  <img class="initial-img" src="../src/assets/gda.png" alt="RAS">
                 </div>
-      
                 <div class="initial-text-box">
-
                   <h2 class="initial-title">
                     Lorem Ipsum
                   </h2>
-
                   <p class="initial-text">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorem laboriosam ducimus non ipsam fugiat quo eos, ipsa assumenda, repellendus est! Odit, accusamus blanditiis temporibus facilis eaque harum vitae. Rem.
                   </p>
-
                 </div>
-
               </div>
-
             </div>
-    
+
+            <!-- Crie o Terceiro Slide que aparece na tela inicial -->
             <div class="initial-slide">
-              
               <div class="initial-slide-box">
-    
                 <div class="initial-img-box">
-
-                  <img class="initial-img" src="./assets/GDR.png" alt="gdr">
-
+                  <img class="initial-img" src="../src/assets/gdr.png" alt="RAS">
                 </div>
-      
                 <div class="initial-text-box">
-
                   <h2 class="initial-title">
                     Lorem Ipsum
                   </h2>
-
                   <p class="initial-text">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorem laboriosam ducimus non ipsam fugiat quo eos, ipsa assumenda, repellendus est! Odit, accusamus blanditiis temporibus facilis eaque harum vitae. Rem.
                   </p>
-
                 </div>
-
               </div>
-
             </div>
-    
+            
+            <!-- Crie o Quarto Slide que aparece na tela inicial -->
             <div class="initial-slide">
-              
               <div class="initial-slide-box">
-    
                 <div class="initial-img-box">
-
-                  <img class="initial-img" src="./assets/ras.png" alt="RAS">
-
+                  <img class="initial-img" src="../src/assets/ras.png" alt="RAS">
                 </div>
-      
                 <div class="initial-text-box">
-
                   <h2 class="initial-title">
                     Lorem Ipsum
                   </h2>
-
                   <p class="initial-text">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorem laboriosam ducimus non ipsam fugiat quo eos, ipsa assumenda, repellendus est! Odit, accusamus blanditiis temporibus facilis eaque harum vitae. Rem.
                   </p>
-
                 </div>
-
               </div>
-
             </div>
-    
           </div>
-
         </div>
-      
+        <!-- Cria a bolinhas que podem ser usadas para nevegacao no slide -->
         <div id="initial-navigation" class="initial-navigation">
-
           <label class="checked" for="slide-1-initial"></label>
           <label for="slide-2-initial"></label>
           <label for="slide-3-initial"></label>
           <label for="slide-4-initial"></label>
-
         </div>
-
       </section>
 
+      <!-- Cria a tela Sobre -->
       <section class="about align-center" id="about">
-
         <div class="about-box">
-          
+          <!-- cria o slider da tela Sobre -->
           <div id="about-carousel" class="about-carousel">
-          
             <div id="about-slides" class="about-slides">
-              
+              <!-- Crie o Primeiro Slide que aparece na tela inicial -->
               <div class="about-slide">
-                
                 <div class="about-slide-box">
                   <div class="img-box-about">
-      
-                    <img class="about-img" src="./assets/sobre.png" alt="Ras">
-                  
+                    <img class="about-img" src="../src/assets/sobre.png" alt="Ras">
                   </div>
-        
                   <div class="text-box-about">
-      
                     <h2 class="about-title">
                       Lorem Ipsum
                     </h2>
-      
                     <p class="about-text">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorem laboriosam ducimus non ipsam fugiat quo eos, ipsa assumenda, repellendus est! Odit, accusamus blanditiis temporibus facilis eaque harum vitae. Rem.
                     </p>
-      
                   </div>
-        
                 </div>
-                
               </div>
-        
+              <!-- Crie o Segundo Slide que aparece na tela inicial -->
               <div class="about-slide">
-                
                 <div class="about-slide-box">
                   <div class="img-box-about">
-      
-                    <img class="about-img" src="./assets/sobre.png" alt="Ras">
-                  
+                    <img class="about-img" src="../src/assets/sobre.png" alt="Ras">
                   </div>
-        
                   <div class="text-box-about">
-      
                     <h2 class="about-title">
                       Lorem Ipsum
                     </h2>
-      
                     <p class="about-text">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorem laboriosam ducimus non ipsam fugiat quo eos, ipsa assumenda, repellendus est! Odit, accusamus blanditiis temporibus facilis eaque harum vitae. Rem.
                     </p>
-      
                   </div>
-        
                 </div>
-                
               </div>
-      
+              <!-- Crie o Terceiro Slide que aparece na tela inicial -->
               <div class="about-slide">
-                
                 <div class="about-slide-box">
                   <div class="img-box-about">
-      
-                    <img class="about-img" src="./assets/sobre.png" alt="Ras">
-                  
+                    <img class="about-img" src="../src/assets/sobre.png" alt="Ras">
                   </div>
-        
                   <div class="text-box-about">
-      
                     <h2 class="about-title">
                       Lorem Ipsum
                     </h2>
-      
                     <p class="about-text">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorem laboriosam ducimus non ipsam fugiat quo eos, ipsa assumenda, repellendus est! Odit, accusamus blanditiis temporibus facilis eaque harum vitae. Rem.
                     </p>
-      
                   </div>
-        
                 </div>
-                
               </div>
-              
+              <!-- Crie o Quarto Slide que aparece na tela inicial -->
               <div class="about-slide">
-                
                 <div class="about-slide-box">
                   <div class="img-box-about">
-      
-                    <img class="about-img" src="./assets/sobre.png" alt="Ras">
-                  
+                    <img class="about-img" src="../src/assets/sobre.png" alt="Ras">
                   </div>
-        
                   <div class="text-box-about">
-      
                     <h2 class="about-title">
                       Lorem Ipsum
                     </h2>
-      
                     <p class="about-text">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorem laboriosam ducimus non ipsam fugiat quo eos, ipsa assumenda, repellendus est! Odit, accusamus blanditiis temporibus facilis eaque harum vitae. Rem.
                     </p>
-      
                   </div>
-        
                 </div>
                 
               </div>
-    
             </div>
-            
           </div>
-    
+          
+           <!-- Cria o botao usado para mudar de slide -->
           <div class="align-center">
-          
             <button onclick="nextAboutInfo()" class="arrow-about"></button>
-          
           </div>
-        
         </div>
     
       </section>
-      
+
+      <!-- Cria a pagina de Projetos  -->
       <section class="projects align-center" id="projects">
-  
         <div class="projects-box align-center">
-          
+          <!-- Cria o botao Esquerdo que aparece na versao Desktop -->
           <div class="button-box">
             <button class="arrow arrow-left" onclick="previousProjects()"></button>
           </div>
-          
+          <!-- Crie o Slider de projetos -->
           <div class="projects-carousel align-center">
-            
             <div class="project-slides">
-      
+              <!-- Crie o primeiro Slide que aparece na tela Projetos -->
               <div class="project-slide">
-                
                 <img class="project-image" src="./assets/projetos.png" alt="Ras">
-      
                 <h2 class="project-name">
                   project 1
                 </h2>
-      
                 <p class="project-description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
-      
               </div>
-              
-      
+              <!-- Crie o Segundo Slide que aparece na tela Projetos -->
               <div class="project-slide">
-                
                 <img class="project-image" src="./assets/projetos.png" alt="Ras">
-      
                 <h2 class="project-name">
                   project 2
                 </h2>
-      
                 <p class="project-description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
-                
               </div>
-      
+              <!-- Crie o Terceiro Slide que aparece na tela Projetos -->
               <div class="project-slide">
-                
                 <img class="project-image" src="./assets/projetos.png" alt="Ras">
-      
                 <h2 class="project-name">
                   project 3
                 </h2>
-      
                 <p class="project-description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
-                
               </div>
-      
             </div>
-      
           </div>
-      
+          
+          <!-- Cria o botao direito que aparece na versao Desktop -->
           <div class="button-box">
-      
             <button class="arrow arrow-right" onclick="nextProjects()"></button>
-          
           </div>
       
+          <!-- Cria os botoes que aparecem na versao mobile -->
           <div class="buttons-box">
-            
             <button class="arrow arrow-left" onclick="previousProjects()"></button>
-            
             <button class="arrow arrow-right" onclick="nextProjects()"></button>
-          
           </div>
       
         </div>
-        
       </section>
 
+      <!-- Cria a pagina de membros  -->
       <section class="team align-center" id="team">
-
         <div class="team-box align-center">
-          
           <div class="members-box">
             <img class="members-img" src="./assets/alan.png" alt="member">
             <h2 class="members-name">Lorem Ipsum</h2>
             <p class="members-function">Lorem Ipsum is simply </p>
           </div>
-          
           <div class="members-box">
             <img class="members-img" src="./assets/lan.png" alt="member">
             <h2 class="members-name">Lorem Ipsum</h2>
             <p class="members-function">Lorem Ipsum is simply </p>
           </div>
-          
           <div class="members-box">
             <img class="members-img" src="./assets/lucas.png" alt="member">
             <h2 class="members-name">Lorem Ipsum</h2>
             <p class="members-function">Lorem Ipsum is simply </p>
           </div>
-          
           <div class="members-box">
             <img class="members-img" src="./assets/lelo.png" alt="member">
             <h2 class="members-name">Lorem Ipsum</h2>
             <p class="members-function">Lorem Ipsum is simply </p>
           </div>
-          
           <div class="members-box">
             <img class="members-img" src="./assets/alan.png" alt="member">
             <h2 class="members-name">Lorem Ipsum</h2>
             <p class="members-function">Lorem Ipsum is simply </p>
           </div>
-          
           <div class="members-box">
             <img class="members-img" src="./assets/lan.png" alt="member">
             <h2 class="members-name">Lorem Ipsum</h2>
             <p class="members-function">Lorem Ipsum is simply </p>
           </div>
-          
           <div class="members-box">
             <img class="members-img" src="./assets/lucas.png" alt="member">
             <h2 class="members-name">Lorem Ipsum</h2>
             <p class="members-function">Lorem Ipsum is simply </p>
           </div>
-          
           <div class="members-box">
             <img class="members-img" src="./assets/lelo.png" alt="member">
             <h2 class="members-name">Lorem Ipsum</h2>
             <p class="members-function">Lorem Ipsum is simply </p>
           </div>
-      
         </div>
-      
       </section>
 
+      <!-- Cia a pagina de contato -->
       <section class="contact align-center" id="contact">
-    
         <div class="contact-box">
           <h2 class="contact-title">
             Contato:
           </h2>
-          
+          <!-- Cria o forme de Cotato que usando o Email.js Envia as messagens de contato -->
           <form class="contact-form" id="contact-form" type="submit">
-            
             <input type="hidden" name="contact_number">
             <label class="label-text">Name:</label>
             <input class="input-form" type="text" name="user_name">
@@ -498,49 +360,38 @@
               <span></span>
               Enviar
             </button>
-      
             <button id="reset" type="reset" class="none"></button>
-      
           </form>
         </div>
-
       </section>
-      
     </main>
     
+    <!-- Cria o footer que aparece no site -->
     <footer class="footer align-center">
-      
       <div class="footer-box align-center">
-        
         <p class="footer-text">
-          Copyright RAS UFPB
+          Copyright Pedro Lucas Macedo de Moraes
         </p>
-
+        <!-- Cria um compenente de navegacao pelas redes sociais -->
         <nav class="social-networks">
-
-          <a href="https://github.com/RAS-UFPB" target="_blank" style="text-decoration: none;">
+          <a href="https://github.com/RAS-UFPB" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
             <img class="logo-social-networks" src="./assets/Redes_sociais/github.png" alt="github">
           </a>
-    
-          <a href="https://www.instagram.com/rasufpb/" target="_blank" style="text-decoration: none;">
+          <a href="https://www.instagram.com/rasufpb/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
             <img class="logo-social-networks" src="./assets/Redes_sociais/instagram.png" alt="instagram">
           </a>
-    
-          <a href="https://www.twitch.tv/rasufpb" target="_blank" style="text-decoration: none;">
+          <a href="https://www.twitch.tv/rasufpb" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
             <img class="logo-social-networks" src="./assets/Redes_sociais/twitch.png" alt="twitch">
           </a>
-          
-          <a href="https://www.youtube.com/channel/UC7ivKC1W7ScdBqfKEkJO68g" target="_blank" style="text-decoration: none;">
+          <a href="https://www.youtube.com/channel/UC7ivKC1W7ScdBqfKEkJO68g" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
             <img class="logo-social-networks-last" src="./assets/Redes_sociais/youtube.png" alt="youtube">
           </a>
-
         </nav>
-
       </div>
 
     </footer>
-
     
+    <!-- Importa todos os arquivos Javascript importantes para o codigo funcionar -->
     <script src="./script.js"></script>
 
   </body>

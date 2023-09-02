@@ -1,10 +1,10 @@
 .projects {
-  width: 100vw;
+  width: 100%;
   background-color: #681371;
 }
 
 .projects-box {
-  width: 90vw;
+  width: 90%;
   max-width: 1200px;
   padding: 30px 0 0 0;
 }
@@ -130,27 +130,21 @@
     display: block;
     text-align: center;
   }
-
   .projects-carousel {
     width: 90vw;
   }
-
   .button-box {
     display: none;
   }
-
   .buttons-box {
     display: block;
   }  
-
   .arrow {
     background-color: #97002B;
   }
-
   .arrow-left{
     margin-right: 20px;
   }
-
   .arrow-right{
     margin-left: 20px;
   }

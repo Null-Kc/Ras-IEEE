@@ -1,13 +1,12 @@
 .team {
-  width: 100vw;
+  width: 100%;
   background-color: #681371;
-
 }
 
 .team-box {
   display: flex;
   flex-wrap: wrap;
-  width: 90vw;
+  width: 90%;
   padding: 30px 0;
   max-width: 1200px;
 }

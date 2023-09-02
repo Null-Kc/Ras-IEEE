@@ -21,12 +21,11 @@ window.onload = function() {
 // Fim Email
 
 // Start Cabecalho 
-// Start Cabecalho 
-function desabilitarScroll() {
+function disableScroll() {
   document.body.style.overflow = 'hidden';
 }
 
-function habilitarScroll() {
+function enableScroll() {
   document.body.style.overflow = '';
 }
 
@@ -38,15 +37,15 @@ li.addEventListener("click", function(event) {
  
   if(menu == false){
     menu = true;
-    desabilitarScroll();
+    disableScroll();
   }
   else{
     menu = false;
-    habilitarScroll();
+    enableScroll();
   }
 })
 
-function fecharmenu(){
+function closemenu(){
   document.getElementById('menu-hamburguer').click();
 }
 // Fim Cabecalho
