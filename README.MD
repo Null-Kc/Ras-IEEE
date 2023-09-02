@@ -18,7 +18,7 @@ Este é o lugar onde a tecnologia robótica ganha vida. Explore nosso site para 
 Para configurar e executar este projeto localmente, siga as etapas abaixo:
 
 1. Clone o repositório: `git clone https://github.com/Null-Kc/Ras-IEEE.git`
-2. Navegue até o diretório do projeto: `cd RAS-IEEE`
+2. Navegue até o diretório do projeto: `cd Ras-IEEE`
 3. Instale as dependências: `npm install`
 4. Abra o arquivo `/src/index.js` Com o Live Server.
 
