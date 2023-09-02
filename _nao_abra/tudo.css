@@ -18,7 +18,7 @@
 /* header  */
 
 .header {
-  width:  100%;
+  width:  100vw;
   height: 100px;
   background-color: #EEEEEE;
   left: 0;
@@ -546,7 +546,7 @@
 
 /* inicio  */
 .initial{
-  width: 100%;
+  width: 100vw;
   background-color: #EEEEEE;
   flex-direction: column;
 }
@@ -682,7 +682,7 @@
 
 /* sobre  */
 .about{
-  width: 100%;
+  width: 100vw;
   background-color: #EEEEEE;
   padding-top: 30px;
   padding-bottom: 50px;
@@ -834,7 +834,7 @@
 
 /* project  */
 .projects {
-  width: 100%;
+  width: 100vw;
   background-color: #681371;
 }
 
@@ -988,7 +988,7 @@
 
 /* equipe  */
 .team {
-  width: 100%;
+  width: 100vw;
   background-color: #681371;
 
 }
@@ -1177,7 +1177,7 @@
 
 /* footer  */
 .footer {
-  width: 100%;
+  width: 100vw;
   background-color: #EEEEEE;
   left: 0;
   bottom: 0;

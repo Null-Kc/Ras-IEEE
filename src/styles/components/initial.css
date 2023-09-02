@@ -1,5 +1,5 @@
 .initial{
-  width: 100%;
+  width: 100vw;
   background-color: #EEEEEE;
   flex-direction: column;
 }
