@@ -1,4 +1,4 @@
-emailjs.init('7N1Ssz7fskGdjIECF');
+emailjs.init('');
 
 window.onload = function() {
   const Apagar = document.querySelector("#reset");
@@ -8,7 +8,7 @@ window.onload = function() {
     
     this.contact_number.value = Math.random() * 100000 | 0;
     
-    emailjs.sendForm('service_bbdlxbl', 'template_vw5w8or', this)
+    emailjs.sendForm('', '', this)
       .then(function() {
         console.log('SUCESSO!');
         Apagar.click();
